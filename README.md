@@ -1,2 +1,2 @@
 # odoo-demo
-First try
+Let's get started.
