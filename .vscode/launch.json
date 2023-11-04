@@ -5,7 +5,7 @@
             "name": "Python: Odoo",
             "type": "python",
             "request": "launch",
-            "pythonPath": "${workspaceFolder}/odoo-env/bin/python3", 
+            "python": "${workspaceFolder}/odoo-env/bin/python3", 
             "program": "${workspaceFolder}/odoo-16.0/odoo-bin",
             "args": [
                 "-c", "/home/marek/odoo-demo/conf/odoo.conf"

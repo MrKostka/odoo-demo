@@ -1,12 +1,29 @@
 <odoo>
     <record id="view_employee_form_inherit" model="ir.ui.view">
         <field name="name">hr.employee.form.inherit</field>
-        <field name="model">hr.employee</field>  <!-- Use only 'hr_employee' here -->
+        <field name="model">hr.employee</field>
         <field name="inherit_id" ref="hr.view_employee_form"/>
         <field name="arch" type="xml">
+            <xpath expr="//field[@name='job_title']" position="after">
+                <field name="employee_number"/>
+            </xpath> 
+            <xpath expr="//button[@name='225']" position="after">
+                <button name="action_send_mail" string="Send Email" type="object"/>
+            </xpath> 
+
             <xpath expr="//field[@name='work_email']" position="after">
-                            <field name="i_love_gb"/>
-                        </xpath>
+                <field name="i_love_gb"/>
+                 <field name="employee_contacts" attrs="{'invisible': [('i_love_gb', '=', False)]}"/>
+            </xpath>      
+
+            <xpath expr="//field[@name='address_home_id']" position="after">
+                <field name="tax"/>
+                <field name="salary"/>
+                <field name="total_salary"/>
+            </xpath>
+            <xpath expr="//field[@name='phone']" position="replace">
+                <field name="special_phone"/>
+            </xpath>
         </field>
     </record>
 </odoo>

@@ -4,7 +4,7 @@
     'depends': ['base', 'hr'],
     'author': 'M. Kostka',
     'category': 'Human Resources',
-    'description': 'Custom HR Addon with i_love_gb field',
+    'description': 'Custom HR Addon with new fields',
     'data': [
         'views/hr_employee_view.xml',
     ],
