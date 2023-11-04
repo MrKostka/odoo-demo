@@ -8,7 +8,7 @@
             "python": "${workspaceFolder}/odoo-env/bin/python3", 
             "program": "${workspaceFolder}/odoo-16.0/odoo-bin",
             "args": [
-                "-c", "/home/marek/odoo-demo/conf/odoo.conf"
+                "-c", "${workspaceFolder}/conf/odoo.conf"
             ],
             "console": "integratedTerminal",
             "justMyCode": true
